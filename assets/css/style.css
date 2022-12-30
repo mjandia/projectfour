@@ -383,7 +383,7 @@ button {
 }
 
 /* Les Cards */
-.card-Palette-gout, .card-note-enchante, .card-La-francaise, .card-delice-sens {
+.main__section-restaurant__card {
   width: 90%;
   height: 311px;
   border-radius: 15px 15px 15px 15px;
