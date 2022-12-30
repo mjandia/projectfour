@@ -212,7 +212,12 @@ a
 }
 
 /* Les Cards */
-.card-Palette-gout, .card-note-enchante, .card-La-francaise, .card-delice-sens
+.main__section-restaurant
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+&__card
 {
     width: 20%;
     height: 311px;
@@ -222,13 +227,8 @@ a
     margin: 17px;
     display: block;
 }
-/* Le restaurant */
-.main__section-restaurant
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
+/* L'arrière-plan du restaurant */
 .background-restaurant
 {
     background: $lightgrey;
