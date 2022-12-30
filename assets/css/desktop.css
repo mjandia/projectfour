@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/***************************************************************************************************************************/
+/* Version Desktop */
+@media screen and (min-width: 992px) {
+  /* les couleurs du  header */
+  /* Les couleurs du footer */
+  /* Loader */
+  .loader {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    margin: 250px 0 0 130px;
+    animation: loader 3s forwards;
+  }
+  .loader:before, .loader:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 700px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 10px solid transparent;
+    border-top-color: #9356DC;
+  }
+  .loader:before {
+    z-index: 100;
+    animation: spin 1s infinite;
+  }
+  .loader:after {
+    border: 10px solid #FF79DA;
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  /* Divers */
+  img {
+    object-fit: cover;
+  }
+  /* Font awesome location-dot, mobile screen, heart et cercle */
+  .fa-location-dot {
+    width: 10%;
+  }
+  .coeur .fa-heart {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .coeur:hover .fa-heart, .coeur .fa-solid {
+    display: none;
+  }
+  .coeur:hover .fa-solid {
+    display: inline;
+    margin-right: 15px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #cercle, #cercle1, #cercle2 {
+    background: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #9356DC;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 0 0 -15px;
+  }
+  .number {
+    color: #FFFFFF;
+    display: flex;
+  }
+  .fa-store {
+    margin-left: 17px;
+    display: flex;
+  }
+  .fa-list, .fa-mobile-screen {
+    display: flex;
+    margin-left: 20px;
+  }
+  /* Les cards cliquables */
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .hover:hover {
+    text-decoration: none;
+  }
+  /* Les Titres et les sous-titres */
+  .main__section-annonce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: main__section-annonce 3000ms;
+  }
+  .main__section-annonce__heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .main__section-annonce__discovery {
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21.09px;
+    width: 100%;
+  }
+  @keyframes main__section-annonce {
+    0% {
+      transform: translateX(-9999px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /* Les Titres et les sous-titres */
+  .main__section-function__heading {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    animation: main__section-function__heading 3500ms;
+  }
+  @keyframes main__section-function__heading {
+    0% {
+      transform: translateX(-9999px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .main__section-restaurant__heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+  }
+  /* Menu fonctionnement */
+  .background-choose-restaurant, .background-make-menu, .background-taste-restaurant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 72.38px;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin: 30px 50px 0 0px;
+    z-index: 1;
+  }
+  .main__section-function {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 0 0;
+  }
+  /* Les Cards */
+  .card-Palette-gout, .card-note-enchante, .card-La-francaise, .card-delice-sens {
+    width: 20%;
+    height: 311px;
+    border-radius: 15px 15px 15px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 17px;
+    display: block;
+  }
+  /* Le restaurant */
+  .main__section-restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .background-restaurant {
+    background: #F7F7F7;
+    height: 500px;
+    padding-top: 30px;
+  }
+}
+/***************************************************************************************************************************/
+/* Version Desktop des autres pages des restaurants*/
+@media screen and (min-width: 992px) {
+  /* les couleurs du  header */
+  /* Les couleurs du footer */
+  /* Le corps de la page */
+  body {
+    margin: 0;
+  }
+  /*La page contenant le site mobile*/
+  .container {
+    width: 100%;
+  }
+  /* Divers */
+  img {
+    object-fit: cover;
+  }
+  /* Le header */
+  .header {
+    width: 100%;
+    height: 96px;
+  }
+  .header__logo img {
+    width: 65%;
+    height: auto;
+    margin: 14px 25px 10px 22%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Restaurant La palette du goût */
+  /* Les titres et sous-titres */
+  .main__section__heading {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40.82px;
+    padding: 30px 20px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  /* Les liens */
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .hover:hover {
+    text-decoration: none;
+  }
+  /* Flexbox */
+  .element1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  /* image de la page la palette du goût */
+  .main__image-header__image-restaurant2 {
+    width: 100%;
+    height: 600px;
+  }
+  /* Font awesome flèche, coeur et check */
+  .header__link {
+    position: relative;
+    left: -550px;
+  }
+  .coeur .fa-heart {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .coeur:hover .fa-heart, .coeur .fa-solid {
+    display: none;
+  }
+  .coeur:hover .fa-solid {
+    display: inline;
+    margin-right: 15px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* Les arrière-plans */
+  .main__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .background-main {
+    background: #F7F7F7;
+    height: 1307px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -150px;
+    margin: 0 0 -150px 0;
+    width: 1055px;
+  }
+  /* la case à cocher */
+  .card-text-icon-checkbox-empty:hover .card-text-icon-checkbox {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: #99E2D0;
+    height: 58px;
+    animation-name: increaseWidth;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes increaseWidth {
+    0% {
+      width: 50px;
+      padding: 0px;
+    }
+    100% {
+      width: 70px;
+      padding: 10px;
+    }
+  }
+}
+
+/*# sourceMappingURL=desktop.css.map */
