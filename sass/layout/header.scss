@@ -1,0 +1,68 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+
+/* Le logo et sa position*/
+.header
+{
+    display: block;
+    width: 100%;
+    height: 63px;
+    
+        &__logo img
+        {
+        width: 45%;
+        height: auto;
+        margin: 14px 25px 10px 30%;
+        background-color: $white-header;
+        animation: header__logo 2000ms;
+        }
+            &__background-form-search
+            {
+            background: $grey-header;
+            width: 100%;
+            height: 50px;
+            @include display-flex-center;
+            }
+}
+@keyframes header__logo{
+0% {
+        transform: translateX(-9999px);
+}
+100% {
+        transform: translateX(0);
+}
+}
+/***************************************************************************************************************************/
+/* Version tablette */
+@media screen and (min-width: 769px)
+{
+.header
+{
+        width: 100%;
+        height: 63px;
+                &__logo img
+                {
+                width: 100%;
+                height: 54px;
+                margin: 14px 25px 10px 0;
+                background-color: $white-header;
+                animation: header__logo 2000ms;
+                }
+                    &__background-form-search
+                    {
+                    background: $grey-header;
+                    width: 100%;
+                    height: 50px;
+                    @include display-flex-center;
+                    }
+}
+@keyframes header__logo{
+0% {
+        transform: translateX(-9999px);
+}
+100% {
+        transform: translateX(0);
+}
+}
+
+}

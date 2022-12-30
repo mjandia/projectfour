@@ -1,3 +1,65 @@
+/* les couleurs du  header */
+/* Les couleurs du footer */
+/* Le logo et sa position*/
+.header {
+  display: block;
+  width: 100%;
+  height: 63px;
+}
+.header__logo img {
+  width: 45%;
+  height: auto;
+  margin: 14px 25px 10px 30%;
+  background-color: #FFFFFF;
+  animation: header__logo 2000ms;
+}
+.header__background-form-search {
+  background: #EAEAEA;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@keyframes header__logo {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/***************************************************************************************************************************/
+/* Version tablette */
+@media screen and (min-width: 769px) {
+  .header {
+    width: 100%;
+    height: 63px;
+  }
+  .header__logo img {
+    width: 100%;
+    height: 54px;
+    margin: 14px 25px 10px 0;
+    background-color: #FFFFFF;
+    animation: header__logo 2000ms;
+  }
+  .header__background-form-search {
+    background: #EAEAEA;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes header__logo {
+    0% {
+      transform: translateX(-9999px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

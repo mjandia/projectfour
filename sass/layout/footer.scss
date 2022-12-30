@@ -1,0 +1,110 @@
+@import "../Utils/variables";
+/* Le nav footer */
+
+.footer-link
+{
+    color: $white-footer;
+}
+.fa-utensils
+{
+    margin-right: 10px;
+}
+.fa-handshake-angle
+{
+    margin-right: 5px;
+}
+/* Le footer */
+.background-footer
+{
+    background: $darkgrey-footer;
+    height: 167px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer__information-legal__heading
+{
+    width: 137.58px;
+    height: 27px;
+    color: $white-footer;
+    font-style: italic;
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26.24px;
+    margin: 10px 0 0 23px;
+}
+.footer__nav-footer ul
+{
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: $white-footer;
+    width: 70%;
+    list-style-type: none;
+    margin: 15px 0 0 -17px;
+    &__knife-fork, &__parntership
+    {
+        font-weight: 500;
+    }
+    &__mention-legale, &__contact
+    {
+        font-weight: 400;
+    }
+}
+/***************************************************************************************************************************/
+/* Version Desktop */
+@media screen and (min-width: 993px)
+{
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/typography";
+    
+$font-size: (placeholder: 16px,fieldinput: 16px, annonce-heading: 24px, annonce-discovery: 18px, 
+function-heading: 24px, restaurant-heading: 24px, button: 16px, functioning-menu: 16px, price-span: 14px, 
+Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericourt: 17px, La-francaise-Delice-sens: 18px);
+/* Le footer */
+.background-footer
+{
+    background: $darkgrey-footer;
+    height: 167px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.footer__information-legal__heading
+{
+    width: 137.58px;
+    height: 27px;
+    color: $white-footer;
+    font-style: italic;
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26.24px;
+    margin: 10px 0 0 23px;
+}
+.footer__nav-footer ul
+{
+    display: flex;
+    font-family: 'roboto';
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: $white-footer;
+    width: 100%;
+    list-style-type: none;
+    gap: 30px;
+    &__knife-fork, &__parntership
+    {
+        font-weight: 500;
+    }
+    &__mention-legale, &__contact
+    {
+        font-weight: 400;
+    }
+}
+}
