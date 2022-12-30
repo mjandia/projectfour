@@ -1,0 +1,369 @@
+/***************************************************************************************************************************/
+/* Version tablette */
+@media screen and (min-width: 575px)
+{
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/typography";
+    
+$font-size: (placeholder: 16px,fieldinput: 16px, annonce-heading: 24px, annonce-discovery: 18px, 
+function-heading: 24px, restaurant-heading: 24px, button: 16px, functioning-menu: 16px, price-span: 14px, 
+Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericourt: 17px, La-francaise-Delice-sens: 18px);
+
+/* Loader */
+
+.loader
+{
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+   position: absolute;
+   margin: 250px 0 0 130px; 
+   animation: loader 3s forwards;
+}
+
+.loader:before, .loader:after
+{
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: 200px;
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+   border: 10px solid transparent;
+   border-top-color: #9356DC;
+}
+.loader:before
+{
+   z-index: 100;
+   animation: spin 1s infinite;
+}
+.loader:after
+{
+   border: 10px solid #FF79DA;
+}
+@keyframes spin
+{
+0%{
+   -webkit-transform: rotate(0deg);
+   -ms-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+}
+100%{
+   -webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+}
+@keyframes loader{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/*La page contenant le site */
+.container
+{
+    width: 100%;
+    animation: container 1000ms;
+}
+@keyframes container{
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+        }
+    }
+/* Flexbox */
+.element1
+{
+    @include display-flex-center;
+    flex-wrap: wrap;
+    animation: element1 2000ms;
+}
+@keyframes element1{
+    0% {
+            transform: translateX(-9999px);
+    }
+    100% {
+            transform: translateX(0);
+    }
+    }
+/* Le formulaire de recherche */
+.form
+{
+    width: 40%;
+    height: auto;
+    background: $grey;
+    margin: 0;
+    @include display-flex-center;
+.form__field
+{
+    display: flex;
+}
+.form__field input
+{
+    @include typography-roboto500;
+    font-size: map-get($font-size, fieldinput);
+    line-height: 18.75px;
+    text-align: center;
+    width: 100%;
+    border: 0px solid $grey;
+    background: $grey;
+}
+.form__field input::placeholder
+{
+    color: black;
+    font-size: map-get($font-size, placeholder);
+    width: 100%;
+}
+}
+/* Les Cards */
+.card-Palette-gout, .card-note-enchante, .card-La-francaise, .card-delice-sens
+{
+    width: 90%;
+    height: 311px;
+    border-radius: 15px 15px 15px 15px;
+    background: $white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0 0 47px;
+    display: block;
+}
+}
+/****************************************************************************************************************/
+/* Version tablette des autres pages des restaurants */
+@media screen and (min-width: 575px)
+{
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/typography";
+    
+$font-size: (placeholder: 16px,fieldinput: 16px, annonce-heading: 24px, annonce-discovery: 18px, 
+function-heading: 24px, restaurant-heading: 24px, button: 16px, functioning-menu: 16px, price-span: 14px, 
+Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericourt: 17px, La-francaise-Delice-sens: 18px);
+
+body
+{
+    margin: 0;
+}
+/*La page contenant le site mobile*/
+.container
+{
+    width: 100%;
+}
+/* Divers */
+img
+{
+    object-fit: cover;
+}
+/* Le header */
+.header
+{
+    width: 100%;
+    height: 96px;
+        &__logo img
+        {
+        width: 65%;
+        height: auto;
+        margin: 14px 25px 10px 22%;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+}
+/* Font awesome flèche, coeur et check */
+.header__link
+{
+    margin: 0 0 0 30px;
+}
+.coeur .fa-heart
+{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.coeur:hover .fa-heart, .coeur .fa-solid
+{
+    display: none;
+}
+.coeur:hover .fa-solid
+{
+    display: inline;
+    margin-right: 15px;
+    background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Les titres et sous-titres */
+.main__section__heading
+{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: map-get($font-size, palette-gout-heading);
+    line-height: 40.82px;
+    padding: 30px 20px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* Les liens */
+a
+{
+    text-decoration: none;
+    color: $black;
+}
+.hover:hover
+{
+    text-decoration: none;
+}
+/* Flexbox */
+.element1
+{
+    @include display-flex-center;
+    width: 100%;
+}
+/* Les cards */
+.main__section__card
+{
+    background: $white;
+    border-radius: 15.04px;
+    margin: 15px;
+    height: 78.07px;
+    display: flex;
+    justify-content: space-between;
+&__card-text
+{
+    margin: 15px 0 0 15px;
+    height: 58.07px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+&__main-text
+{
+    @include typography-roboto500;
+    font-size: map-get($font-size, menu-escargot-foie-oeuf-filet-boeuf-turbot-paris-macaron-mousse);
+    line-height: 21.09px;
+    margin: 0 0 0 15px;
+}
+&__second-text
+{
+    @include typography-roboto300;
+    font-size: map-get($font-size, menu-espelette-truffe-assaisonne-ribambelle-puree-agrumes-revisite-glace-chocolat);
+    line-height: 17.58px;
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.price
+{
+    @include typography-roboto700;
+    font-size: map-get($font-size, prix-25-35-20-40-35-40-18-22-23);
+    line-height: 17.58px;
+    color: $darkcolor;
+}
+}
+/* Les cards à cocher */
+.icon .fa-circle-check
+{
+    color: $white;
+    cursor: pointer;
+    @include display-flex-center;
+    width: 30px;
+}
+.icon:hover .fa-circle-check
+{
+    color: $white;
+    clip-path: circle(40%);
+    width: 30px;
+}
+.card-text .card-text-icon-checkbox-empty
+{
+    @include display-flex-center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $white;
+    color: $white;
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+}
+.card-text-icon-checkbox-empty:hover .card-text-icon-checkbox
+{
+    color: $white;
+    @include display-flex-center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $mint;
+    height: 58px;
+    animation-name: increaseWidth;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes increaseWidth{
+    0% {
+        width: 40px;
+        padding: 0px;
+    }
+    100% {
+        width: 50px;
+        padding: 10px;
+    }
+}
+/* Le bouton Commander */
+.button {
+    @include display-flex-center;
+    button {
+        @include typography-roboto500;
+        font-size: map-get($font-size, button);
+        line-height: 18.75px;
+        text-align: center;
+        color: $white;
+        width: 218px;
+        height: 50px;
+        margin: 30px 0 20px 0;
+        border-radius: 25px;
+        border: 1px solid $pink;
+        cursor: pointer;
+        }
+        .btn {
+            background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+}
+/* image de la page la palette du goût */
+.main__image-header__image-restaurant2
+{
+    width: 100%;
+    height: 275px;
+}
+/* L'arrière-plan */
+.background-main
+{
+    background: $lightgrey;
+    height: 1307px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -50px;
+    margin: 0 0 -50px 0;
+}
+
+/* Les menus Palette du goût*/
+.main__section__starter, .main__section__main-course, .main__section__dessert
+{
+    @include typography-roboto300;
+    font-size: map-get($font-size, menu-starter-main-course-dessert);
+    line-height: 18.75px;
+    border-bottom: 3px solid $lightgreen;
+    width: 40px;
+    margin-left: 15px;
+}
+}
