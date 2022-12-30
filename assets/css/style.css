@@ -1,0 +1,457 @@
+/*******************************************************************************************************************************************************/
+/* Css pour les mobiles en mobile first */
+/* les couleurs du  header */
+/* Les couleurs du footer */
+/* Loader */
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin: 250px 0 0 130px;
+  animation: loader 3s forwards;
+}
+
+.loader:before, .loader:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 10px solid transparent;
+  border-top-color: #9356DC;
+}
+
+.loader:before {
+  z-index: 100;
+  animation: spin 1s infinite;
+}
+
+.loader:after {
+  border: 10px solid #FF79DA;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Le corps de la page */
+body {
+  margin: 0;
+}
+
+/*La page contenant le site */
+.container {
+  width: 100%;
+  animation: container 1000ms;
+}
+
+@keyframes container {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Divers */
+img {
+  object-fit: cover;
+}
+
+/* Font awesome location-dot, mobile screen, heart et cercle */
+.fa-location-dot {
+  width: 10%;
+}
+
+.coeur .fa-heart {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.coeur:hover .fa-heart, .coeur .fa-solid {
+  display: none;
+}
+
+.coeur:hover .fa-solid {
+  display: inline;
+  margin-right: 15px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#cercle, #cercle1, #cercle2 {
+  background: #9356DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #9356DC;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 0 0 -15px;
+}
+
+.number {
+  color: #FFFFFF;
+  display: flex;
+}
+
+.fa-store {
+  margin-left: 17px;
+  display: flex;
+}
+
+.fa-list, .fa-mobile-screen {
+  display: flex;
+  margin-left: 20px;
+}
+
+/* Les cards cliquables */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.hover:hover {
+  text-decoration: none;
+}
+
+/* Le formulaire de recherche */
+.form {
+  width: 40%;
+  height: auto;
+  background: #EAEAEA;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .form__field {
+  display: flex;
+}
+.form .form__field input {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  text-align: center;
+  width: 100%;
+  border: 0px solid #EAEAEA;
+  background: #EAEAEA;
+}
+.form .form__field input::placeholder {
+  color: black;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Les Titres et les sous-titres */
+.main__section-annonce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: main__section-annonce 3000ms;
+}
+.main__section-annonce__heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  width: 72%;
+  text-align: center;
+  padding-top: 50px;
+}
+.main__section-annonce__discovery {
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21.09px;
+  width: 97%;
+}
+
+@keyframes main__section-annonce {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.main__section-function__heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin: 0 0 0 -20px;
+  animation: main__section-function__heading 3500ms;
+}
+
+@keyframes main__section-function__heading {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.main__section-restaurant__heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin: 0 0 30px 10px;
+}
+
+/* Le bouton d'exploration */
+button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 218px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px 0;
+  border-radius: 25px;
+  border: 1px solid #FF79DA;
+}
+
+.btn {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Flexbox */
+.element1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: element1 2000ms;
+}
+
+@keyframes element1 {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.element2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F7F7F7;
+  margin-top: 38px;
+  animation: element2 3000ms;
+}
+
+@keyframes element2 {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.element3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+/* Menu Fonctionnement */
+.background-choose-restaurant {
+  animation: background-choose-restaurant 4000ms;
+}
+
+.background-make-menu {
+  animation: background-make-menu 5000ms;
+}
+
+.background-taste-restaurant {
+  animation: background-taste-restaurant 6000ms;
+}
+
+@keyframes background-choose-restaurant {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes background-make-menu {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes background-taste-restaurant {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.background-choose-restaurant, .background-make-menu, .background-taste-restaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 72.38px;
+  background: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.restaurant, .make-menu, .taste-store {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  width: 100%;
+  display: flex;
+  padding: 0 0 0 15px;
+}
+
+/* Les liens du menu fonctionnement */
+.background-choose-restaurant:hover, .background-make-menu:hover, .background-taste-restaurant:hover {
+  background: #F5EDFF;
+}
+
+.background-choose-restaurant:hover, .fa-mobile-screen:hover {
+  color: #9356DC;
+}
+
+.background-make-menu:hover, .fa-list:hover {
+  color: #9356DC;
+}
+
+.background-taste-restaurant:hover, .fa-store:hover {
+  color: #9356DC;
+}
+
+/* Les images */
+.image-restaurant {
+  width: 100%;
+  height: 231px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+
+.image-restaurant1 {
+  width: 100%;
+  height: 231px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+
+/* Les Cards */
+.card-Palette-gout, .card-note-enchante, .card-La-francaise, .card-delice-sens {
+  width: 90%;
+  height: 311px;
+  border-radius: 15px 15px 15px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 17px;
+  display: block;
+}
+
+/* Les restaurants */
+.background-restaurant {
+  background: #F7F7F7;
+  height: 1400px;
+  padding-top: 30px;
+}
+
+.badge {
+  background: #99E2D0;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -70%;
+  left: 70%;
+  display: flex;
+  margin: -5px;
+}
+
+span {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #008766;
+  text-align: center;
+  padding: 5px 0 0 5px;
+}
+
+.food {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+  text-align: left;
+  margin: -15px 0 8px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.garnish {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 19.92px;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.food-three, .food-four {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+  text-align: left;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
