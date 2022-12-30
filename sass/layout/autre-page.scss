@@ -1,0 +1,231 @@
+/* CSS de la page La palette du goût en mobile first */
+@media screen and (max-width: 574px)
+{
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/typography";
+
+$font-size: (palette-gout-heading: 28px, menu-starter-main-course-dessert: 16px, menu-escargot-foie-oeuf-filet-boeuf-turbot-paris-macaron-mousse: 18px,
+menu-espelette-truffe-assaisonne-ribambelle-puree-agrumes-revisite-glace-chocolat: 15px, prix-25-35-20-40-35-40-18-22-23: 15px, button: 16px);
+
+/* Le corps de la page */
+body
+{
+    margin: 0;
+}
+/*La page contenant le site mobile*/
+.container
+{
+    width: 100%;
+}
+/* Divers */
+img
+{
+    object-fit: cover;
+}
+/* Le header */
+.header
+{
+    display: block;
+    width: 100%;
+    height: 63px;
+        &__logo img
+        {
+        width: 50%;
+        height: auto;
+        margin: 14px 25px 10px 22%;
+        background-color: $white;
+        }
+}
+/* Les titres et sous-titres */
+.main__section__heading
+{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: map-get($font-size, palette-gout-heading);
+    line-height: 40.82px;
+    padding: 30px 20px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* Flexbox */
+.element1
+{
+    @include display-flex-center;
+}
+
+/* Font awesome flèche, coeur et check */
+.header__link
+{
+    margin: 0 0 0 30px;
+}
+.coeur .fa-heart
+{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.coeur:hover .fa-heart, .coeur .fa-solid
+{
+    display: none;
+}
+.coeur:hover .fa-solid
+{
+    display: inline;
+    margin-right: 15px;
+    background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Les liens */
+a
+{
+    text-decoration: none;
+    color: $black;
+}
+.hover:hover
+{
+    text-decoration: none;
+}
+/* image de la page*/
+.main__image-header__image-restaurant2
+{
+    width: 100%;
+    height: 275px;
+}
+/* L'arrière-plan */
+.background-main
+{
+    background: $lightgrey;
+    height: 1307px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -50px;
+    margin: 0 0 -50px 0;
+}
+/* Les menus */
+.main__section__starter, .main__section__main-course, .main__section__dessert
+{
+    @include typography-roboto300;
+    font-size: map-get($font-size, menu-starter-main-course-dessert);
+    line-height: 18.75px;
+    border-bottom: 3px solid $lightgreen;
+    width: 40px;
+    margin-left: 15px;
+}
+/* Les card */
+.main__section__card
+{
+    background: $white;
+    border-radius: 15.04px;
+    margin: 15px;
+    height: 78.07px;
+    display: flex;
+    justify-content: space-between;
+&__card-text
+{
+    margin: 15px 0 0 5px;
+    height: 58.07px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+&__main-text
+{
+    @include typography-roboto500;
+    font-size: map-get($font-size, menu-escargot-foie-oeuf-filet-boeuf-turbot-paris-macaron-mousse);
+    line-height: 21.09px;
+    margin: 0 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+&__second-text
+{
+    @include typography-roboto300;
+    font-size: map-get($font-size, menu-espelette-truffe-assaisonne-ribambelle-puree-agrumes-revisite-glace-chocolat);
+    line-height: 17.58px;
+    margin: 0 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.price
+{
+    @include typography-roboto700;
+    font-size: map-get($font-size, prix-25-35-20-40-35-40-18-22-23);
+    line-height: 17.58px;
+    color: $darkcolor;
+}
+}
+/* Les cases à cocher */
+.icon .fa-circle-check
+{
+    color: $white;
+    cursor: pointer;
+    @include display-flex-center;
+    width: 30px;
+}
+.icon:hover .fa-circle-check
+{
+    color: $white;
+    clip-path: circle(40%);
+    width: 30px;
+}
+.card-text .card-text-icon-checkbox-empty
+{
+    @include display-flex-center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $white;
+    color: $white;
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+}
+.card-text-icon-checkbox-empty:hover .card-text-icon-checkbox
+{
+    color: $white;
+    @include display-flex-center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: $mint;
+    height: 58px;
+    animation-name: increaseWidth;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes increaseWidth{
+    0% {
+        width: 40px;
+        padding: 0px;
+    }
+    100% {
+        width: 50px;
+        padding: 10px;
+    }
+}
+/* Le bouton Commander */
+.button {
+    @include display-flex-center;
+    button {
+        @include typography-roboto500;
+        font-size: map-get($font-size, button);
+        line-height: 18.75px;
+        text-align: center;
+        color: $white;
+        width: 218px;
+        height: 50px;
+        margin: 30px 0 20px 0;
+        border-radius: 25px;
+        border: 1px solid $pink;
+        cursor: pointer;
+        }
+        .btn {
+            background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+}
+}
+/***************************************************************************************************************************/

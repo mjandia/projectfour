@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* CSS de la page La palette du goût en mobile first */
+@media screen and (max-width: 574px) {
+  /* les couleurs du  header */
+  /* Les couleurs du footer */
+  /* Le corps de la page */
+  body {
+    margin: 0;
+  }
+  /*La page contenant le site mobile*/
+  .container {
+    width: 100%;
+  }
+  /* Divers */
+  img {
+    object-fit: cover;
+  }
+  /* Le header */
+  .header {
+    display: block;
+    width: 100%;
+    height: 63px;
+  }
+  .header__logo img {
+    width: 50%;
+    height: auto;
+    margin: 14px 25px 10px 22%;
+    background-color: #FFFFFF;
+  }
+  /* Les titres et sous-titres */
+  .main__section__heading {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40.82px;
+    padding: 30px 20px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  /* Flexbox */
+  .element1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Font awesome flèche, coeur et check */
+  .header__link {
+    margin: 0 0 0 30px;
+  }
+  .coeur .fa-heart {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .coeur:hover .fa-heart, .coeur .fa-solid {
+    display: none;
+  }
+  .coeur:hover .fa-solid {
+    display: inline;
+    margin-right: 15px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* Les liens */
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .hover:hover {
+    text-decoration: none;
+  }
+  /* image de la page*/
+  .main__image-header__image-restaurant2 {
+    width: 100%;
+    height: 275px;
+  }
+  /* L'arrière-plan */
+  .background-main {
+    background: #F7F7F7;
+    height: 1307px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -50px;
+    margin: 0 0 -50px 0;
+  }
+  /* Les menus */
+  .main__section__starter, .main__section__main-course, .main__section__dessert {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18.75px;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+    margin-left: 15px;
+  }
+  /* Les card */
+  .main__section__card {
+    background: #FFFFFF;
+    border-radius: 15.04px;
+    margin: 15px;
+    height: 78.07px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__section__card__card-text {
+    margin: 15px 0 0 5px;
+    height: 58.07px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+  }
+  .main__section__card__main-text {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
+    margin: 0 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .main__section__card__second-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17.58px;
+    margin: 0 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .main__section__card .price {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.58px;
+    color: #353535;
+  }
+  /* Les cases à cocher */
+  .icon .fa-circle-check {
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+  }
+  .icon:hover .fa-circle-check {
+    color: #FFFFFF;
+    clip-path: circle(40%);
+    width: 30px;
+  }
+  .card-text .card-text-icon-checkbox-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: #FFFFFF;
+    color: #FFFFFF;
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+  }
+  .card-text-icon-checkbox-empty:hover .card-text-icon-checkbox {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15.04px 15.04px 0;
+    background: #99E2D0;
+    height: 58px;
+    animation-name: increaseWidth;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes increaseWidth {
+    0% {
+      width: 40px;
+      padding: 0px;
+    }
+    100% {
+      width: 50px;
+      padding: 10px;
+    }
+  }
+  /* Le bouton Commander */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button button {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 218px;
+    height: 50px;
+    margin: 30px 0 20px 0;
+    border-radius: 25px;
+    border: 1px solid #FF79DA;
+    cursor: pointer;
+  }
+  .button .btn {
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+/***************************************************************************************************************************/
+
+/*# sourceMappingURL=style-autre-page.css.map */
