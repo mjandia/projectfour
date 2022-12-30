@@ -13,8 +13,8 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
 
 .loader
 {
-    width: 200px;
-    height: 200px;
+    width: 300px !important;
+    height: 300px !important;
     border-radius: 100%;
     position: absolute;
     margin: 250px 0 0 130px; 
@@ -26,7 +26,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
     content: "";
     position: absolute;
     top: -10px;
-    left: 700px;
+    left: 700px !important;
     width: 100%;
     height: 100%;
     border-radius: 100%;
