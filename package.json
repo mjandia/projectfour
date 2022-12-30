@@ -1,0 +1,27 @@
+{
+    "name": "ohmyfood",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "sass-main": "sass --watch ./sass/main.scss:./assets/css/style.css",
+      "sass": "sass --watch ./sass/layout/autre-page.scss:./assets/css/style-autre-page.css",
+      "sass-header": "sass --watch ./sass/layout/header.scss:./assets/css/header.css",
+      "sass-footer": "sass --watch ./sass/layout/footer.scss:./assets/css/footer.css",
+      "sass-tablette": "sass --watch ./sass/layout/tablette.scss:./assets/css/tablette.css",
+      "sass-desktop": "sass --watch ./sass/layout/desktop.scss:./assets/css/desktop.css",
+      "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/",
+      "prefix-page": "postcss ./assets/css/style-autre-page.css --use autoprefixer -d ./assets/css/prefixed/"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mjandia/ohmyfood.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/mjandia/ohmyfood/issues"
+    },
+    "homepage": "https://github.com/mjandia/ohmyfood#readme",
+    "browserslist": "last 4 versions"
+  }
