@@ -13,8 +13,8 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
 
 .loader
 {
-    width: 300px !important;
-    height: 300px !important;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
     position: absolute;
     margin: 250px 0 0 130px; 
@@ -65,7 +65,16 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
         opacity: 0;
     }
 }
-
+/* Le corps de la page */
+body
+{
+    margin: 0;
+}
+/*La page contenant le site mobile*/
+.container
+{
+    width: 100%;
+}
 /* Divers */
 img
 {
@@ -323,7 +332,7 @@ a
 .header__link
 {
     position: relative;
-    left: -550px;
+    left: -300px;
 }
 .coeur .fa-heart
 {

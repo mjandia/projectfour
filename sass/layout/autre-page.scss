@@ -149,10 +149,9 @@ a
     font-size: map-get($font-size, menu-espelette-truffe-assaisonne-ribambelle-puree-agrumes-revisite-glace-chocolat);
     line-height: 17.58px;
     margin: 0 5px 0 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .price
 {
@@ -160,6 +159,10 @@ a
     font-size: map-get($font-size, prix-25-35-20-40-35-40-18-22-23);
     line-height: 17.58px;
     color: $darkcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 15px 0 0;
 }
 }
 /* Les cases à cocher */

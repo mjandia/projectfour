@@ -228,15 +228,19 @@
     font-weight: 300;
     line-height: 17.58px;
     margin: 0 15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .main__section__card .price {
     font-family: "Roboto";
     font-weight: 700;
     line-height: 17.58px;
     color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 15px 0 0;
   }
   /* Les cards à cocher */
   .icon .fa-circle-check {
