@@ -103,6 +103,7 @@
     height: 78.07px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
   .main__section__card__card-text {
     margin: 15px 0 0 5px;
@@ -164,7 +165,7 @@
     height: 0px;
     cursor: pointer;
   }
-  .card-text-icon-checkbox-empty:hover .card-text-icon-checkbox {
+  .main__section__card:hover .card-text-icon-checkbox {
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -178,7 +179,7 @@
   }
   @keyframes increaseWidth {
     0% {
-      width: 40px;
+      width: 0px;
       padding: 0px;
     }
     100% {

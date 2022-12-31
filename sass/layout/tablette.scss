@@ -244,6 +244,7 @@ a
     height: 78.07px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 &__card-text
 {
     margin: 15px 0 0 15px;
@@ -302,7 +303,7 @@ a
     height: 0px;
     cursor: pointer;
 }
-.card-text-icon-checkbox-empty:hover .card-text-icon-checkbox
+.main__section__card:hover .card-text-icon-checkbox
 {
     color: $white;
     @include display-flex-center;
@@ -315,7 +316,7 @@ a
 }
 @keyframes increaseWidth{
     0% {
-        width: 40px;
+        width: 0px;
         padding: 0px;
     }
     100% {

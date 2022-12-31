@@ -242,7 +242,7 @@
     justify-content: center;
     align-items: center;
   }
-  /* Restaurant La palette du goût */
+  /* Restaurant */
   /* Les titres et sous-titres */
   .main__section__heading {
     font-family: "Shrikhand";
@@ -309,7 +309,7 @@
     width: 1055px;
   }
   /* la case à cocher */
-  .card-text-icon-checkbox-empty:hover .card-text-icon-checkbox {
+  .main__section__card:hover .card-text-icon-checkbox {
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -323,11 +323,11 @@
   }
   @keyframes increaseWidth {
     0% {
-      width: 50px;
+      width: 0px;
       padding: 0px;
     }
     100% {
-      width: 70px;
+      width: 50px;
       padding: 10px;
     }
   }
