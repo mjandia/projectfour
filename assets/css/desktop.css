@@ -7,7 +7,6 @@
   .loader {
     width: 150px;
     height: 150px;
-    border-radius: 100%;
     position: absolute;
     margin: 250px 0 0 130px;
     animation: loader 3s forwards;
@@ -19,9 +18,8 @@
     left: 700px !important;
     width: 100%;
     height: 100%;
-    border-radius: 100%;
     border: 10px solid transparent;
-    border-top-color: #9356DC;
+    border-color: #9356DC;
   }
   .loader:before {
     z-index: 100;
