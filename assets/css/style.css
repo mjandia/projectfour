@@ -91,19 +91,23 @@ img {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s;
 }
 
-#cercle, #cercle1, #cercle2 {
-  background: #9356DC;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #9356DC;
-  color: #FFFFFF;
-  text-align: center;
-  margin: 0 0 0 -15px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .number {
   color: #FFFFFF;
   display: flex;
