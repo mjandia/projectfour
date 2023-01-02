@@ -1,5 +1,5 @@
 /***************************************************************************************************************************/
-/* Version tablette */
+/* Version tablette page d'accueil */
 @media screen and (min-width: 575px)
 {
 @import "../Utils/variables";
@@ -373,5 +373,42 @@ a
     border-bottom: 3px solid $lightgreen;
     width: 40px;
     margin-left: 15px;
+}
+/* Les animations des cards */
+.starter
+{
+    animation: starter 1000ms;
+}
+@keyframes starter{
+0% {
+    transform: translateX(-9999px);
+    }
+100% {
+    transform: translateX(0);
+    }
+}
+.main-course
+{
+    animation: main-course 2000ms;
+}
+@keyframes main-course{
+0% {
+    transform: translateX(-9999px);
+    }
+100% {
+    transform: translateX(0);
+    }
+}
+.dessert
+{
+    animation: dessert 3000ms;
+}
+@keyframes dessert{
+0% {
+    transform: translateX(-9999px);
+    }
+100% {
+    transform: translateX(0);
+    }
 }
 }
