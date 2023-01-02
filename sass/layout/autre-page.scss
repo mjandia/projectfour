@@ -165,6 +165,43 @@ a
     margin: 12px 15px 0 0;
 }
 }
+/* Les animations des cards */
+.starter
+{
+    animation: starter 1000ms;
+}
+@keyframes starter{
+0% {
+    transform: translateX(-9999px);
+    }
+100% {
+    transform: translateX(0);
+    }
+}
+.main-course
+{
+    animation: main-course 2000ms;
+}
+@keyframes main-course{
+0% {
+    transform: translateX(-9999px);
+    }
+100% {
+    transform: translateX(0);
+    }
+}
+.dessert
+{
+    animation: dessert 3000ms;
+}
+@keyframes dessert{
+0% {
+    transform: translateX(-9999px);
+    }
+100% {
+    transform: translateX(0);
+    }
+}
 /* Les cases à cocher */
 .icon .fa-circle-check
 {
