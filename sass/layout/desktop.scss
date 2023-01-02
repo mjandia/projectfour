@@ -85,11 +85,14 @@ img
 .coeur:hover .fa-heart, .coeur .fa-solid
 {
     display: none;
+    opacity: 0;
 }
 .coeur:hover .fa-solid
 {
     display: inline;
     margin-right: 15px;
+    opacity: 1;
+    transition: opacity 250ms;
     background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
