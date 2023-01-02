@@ -62,6 +62,21 @@
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   /* Les liens */
   a {

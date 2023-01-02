@@ -77,6 +77,22 @@ img
     background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn
+{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0.40;
+    }
+    60%{
+        opacity: 0.60;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 /* Les liens */
 a
