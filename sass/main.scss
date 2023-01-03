@@ -29,7 +29,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
    width: 100%;
    height: 100%;
    border: 10px solid transparent;
-   border-color: #9356DC;
+   border-color: $violet;
 }
 .loader:before
 {
@@ -38,7 +38,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
 }
 .loader:after
 {
-   border: 10px solid #FF79DA;
+   border: 10px solid $pink;
 }
 @keyframes spin
 {
