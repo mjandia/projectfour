@@ -9,9 +9,7 @@
 $font-size: (placeholder: 16px,fieldinput: 16px, annonce-heading: 24px, annonce-discovery: 18px, 
 function-heading: 24px, restaurant-heading: 24px, button: 16px, functioning-menu: 16px, price-span: 14px, 
 Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericourt: 17px, La-francaise-Delice-sens: 18px);
-
-/* Loader */
-
+/* le loader */
 .loader
 {
    width: 150px;
@@ -19,7 +17,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
    position: absolute;
    margin: 250px 0 0 130px; 
    animation: loader 3s forwards;
-}
+} 
 
 .loader:before, .loader:after
 {
@@ -31,11 +29,12 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
    height: 100%;
    border: 10px solid transparent;
    border-color: $violet;
+   animation: spin 1s forwards;
 }
 .loader:before
 {
    z-index: 100;
-   animation: spin 1s infinite;
+   animation: increase 1s infinite;
 }
 .loader:after
 {
@@ -43,11 +42,20 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
 }
 @keyframes spin
 {
+0%{
+    transform: rotate(0);
+    }
+100%{
+    transform: rotate(360deg)
+}
+}
+@keyframes increase
+{
     0%{
-        scale: 1;
+        transform: scale(1);
     }
     100%{
-        scale: 2;
+        transform: scale(1.4);
     }
 }
 @keyframes loader{
@@ -58,7 +66,6 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
         opacity: 0;
     }
 }
-
 /*La page contenant le site */
 .container
 {
@@ -123,6 +130,35 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
 .element2
 {
     margin-top: 0px;
+}
+/* badge et cercle */
+#cercle, #cercle1, #cercle2
+{
+    background: $violet;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 3px solid $violet;
+    color: $white;
+    text-align: center;
+    margin: 0 0 0 -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.badge
+{
+    background: $lightgreen;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70%;
+    left: 80%;
 }
 }
 /****************************************************************************************************************/

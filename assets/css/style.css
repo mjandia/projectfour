@@ -15,16 +15,17 @@
   content: "";
   position: absolute;
   top: -10px;
-  left: -20px;
+  left: -50px;
   width: 100%;
   height: 100%;
   border: 10px solid transparent;
   border-color: #9356DC;
+  animation: spin 1s forwards;
 }
 
 .loader:before {
   z-index: 100;
-  animation: spin 1s infinite;
+  animation: increase 1s infinite;
 }
 
 .loader:after {
@@ -33,10 +34,18 @@
 
 @keyframes spin {
   0% {
-    scale: 1;
+    transform: rotate(0);
   }
   100% {
-    scale: 1.4;
+    transform: rotate(360deg);
+  }
+}
+@keyframes increase {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
   }
 }
 @keyframes loader {
@@ -71,7 +80,21 @@ img {
   object-fit: cover;
 }
 
-/* Font awesome location-dot, mobile screen, heart et cercle */
+/* Font awesome location-dot, mobile screen, heart, cercle et badge */
+.badge {
+  background: #99E2D0;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -70%;
+  left: 20%;
+}
+
 .fa-location-dot {
   width: 10%;
 }
@@ -105,6 +128,20 @@ img {
     opacity: 1;
   }
 }
+#cercle, #cercle1, #cercle2 {
+  background: #9356DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #9356DC;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 0 0 -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .number {
   color: #FFFFFF;
   display: flex;
@@ -322,19 +359,6 @@ button {
   background: #F7F7F7;
   height: 1400px;
   padding-top: 30px;
-}
-
-.badge {
-  background: #99E2D0;
-  width: 80px;
-  height: 29px;
-  border-radius: 2px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  position: relative;
-  top: -70%;
-  left: 70%;
-  display: flex;
-  margin: -5px;
 }
 
 .food {
