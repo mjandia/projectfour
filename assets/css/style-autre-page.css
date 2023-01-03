@@ -62,14 +62,11 @@
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: fadeIn 2s;
+    animation: loom 2s;
   }
-  @keyframes fadeIn {
+  @keyframes loom {
     0% {
       opacity: 0;
-    }
-    40% {
-      opacity: 0.4;
     }
     60% {
       opacity: 0.6;
@@ -161,7 +158,7 @@
   }
   /* Les animations des cards */
   .starter {
-    animation: starter 1000ms;
+    animation: starter 2500ms forwards;
   }
   @keyframes starter {
     0% {
@@ -172,7 +169,7 @@
     }
   }
   .main-course {
-    animation: main-course 2000ms;
+    animation: main-course 3500ms forwards;
   }
   @keyframes main-course {
     0% {
@@ -183,7 +180,7 @@
     }
   }
   .dessert {
-    animation: dessert 3000ms;
+    animation: dessert 4500ms forwards;
   }
   @keyframes dessert {
     0% {
@@ -226,11 +223,9 @@
     border-radius: 0 15.04px 15.04px 0;
     background: #99E2D0;
     height: 58px;
-    animation-name: increaseWidth;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation: expand 1s forwards;
   }
-  @keyframes increaseWidth {
+  @keyframes expand {
     0% {
       width: 0px;
       padding: 0px;

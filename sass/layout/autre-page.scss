@@ -77,15 +77,12 @@ img
     background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: fadeIn 2s;
+    animation: loom 2s;
 }
-@keyframes fadeIn
+@keyframes loom
 {
     0%{
         opacity: 0;
-    }
-    40%{
-        opacity: 0.40;
     }
     60%{
         opacity: 0.60;
@@ -184,39 +181,42 @@ a
 /* Les animations des cards */
 .starter
 {
-    animation: starter 1000ms;
+    animation: starter 2500ms forwards;
 }
 @keyframes starter{
 0% {
     transform: translateX(-9999px);
     }
+
 100% {
     transform: translateX(0);
-    }
+}
 }
 .main-course
 {
-    animation: main-course 2000ms;
+    animation: main-course 3500ms forwards;
 }
 @keyframes main-course{
 0% {
     transform: translateX(-9999px);
-    }
+}
+
 100% {
     transform: translateX(0);
-    }
+}
 }
 .dessert
 {
-    animation: dessert 3000ms;
+    animation: dessert 4500ms forwards;
 }
 @keyframes dessert{
 0% {
     transform: translateX(-9999px);
-    }
+}
+
 100% {
     transform: translateX(0);
-    }
+}
 }
 /* Les cases à cocher */
 .icon .fa-circle-check
@@ -249,11 +249,9 @@ a
     border-radius: 0 15.04px 15.04px 0;
     background: $mint;
     height: 58px;
-    animation-name: increaseWidth;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation: expand 1s forwards;
 }
-@keyframes increaseWidth{
+@keyframes expand{
     0% {
         width: 0px;
         padding: 0px;

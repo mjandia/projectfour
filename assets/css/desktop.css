@@ -9,7 +9,7 @@
     height: 150px;
     margin: 250px 0 0 130px;
     position: absolute;
-    animation: loader 5s forwards;
+    animation: loader 3s forwards;
   }
   .loader:before, .loader:after {
     content: "";
@@ -71,8 +71,6 @@
   .coeur:hover .fa-solid {
     display: inline;
     margin-right: 15px;
-    opacity: 1;
-    transition: opacity 250ms;
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -302,11 +300,9 @@
     border-radius: 0 15.04px 15.04px 0;
     background: #99E2D0;
     height: 58px;
-    animation-name: increaseWidth;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation: expand 1s forwards;
   }
-  @keyframes increaseWidth {
+  @keyframes expand {
     0% {
       width: 0px;
       padding: 0px;
@@ -318,7 +314,7 @@
   }
   /* Les animations des cards */
   .starter {
-    animation: starter 1000ms;
+    animation: starter 2500ms;
   }
   @keyframes starter {
     0% {
@@ -329,7 +325,7 @@
     }
   }
   .main-course {
-    animation: main-course 2000ms;
+    animation: main-course 3500ms;
   }
   @keyframes main-course {
     0% {
@@ -340,7 +336,7 @@
     }
   }
   .dessert {
-    animation: dessert 3000ms;
+    animation: dessert 4500ms;
   }
   @keyframes dessert {
     0% {

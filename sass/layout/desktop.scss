@@ -17,7 +17,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
     height: 150px;
     margin: 250px 0 0 130px;
     position: absolute;
-    animation: loader 5s forwards;
+    animation: loader 3s forwards;
 }
 
 .loader:before, .loader:after
@@ -91,8 +91,6 @@ img
 {
     display: inline;
     margin-right: 15px;
-    opacity: 1;
-    transition: opacity 250ms;
     background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -353,11 +351,9 @@ a
     border-radius: 0 15.04px 15.04px 0;
     background: $mint;
     height: 58px;
-    animation-name: increaseWidth;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation: expand 1s forwards;
 }
-@keyframes increaseWidth{
+@keyframes expand{
     0% {
         width: 0px;
         padding: 0px;
@@ -370,7 +366,7 @@ a
 /* Les animations des cards */
 .starter
 {
-    animation: starter 1000ms;
+    animation: starter 2500ms;
 }
 @keyframes starter{
 0% {
@@ -382,7 +378,7 @@ a
 }
 .main-course
 {
-    animation: main-course 2000ms;
+    animation: main-course 3500ms;
 }
 @keyframes main-course{
 0% {
@@ -394,7 +390,7 @@ a
 }
 .dessert
 {
-    animation: dessert 3000ms;
+    animation: dessert 4500ms;
 }
 @keyframes dessert{
 0% {
