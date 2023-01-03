@@ -11,7 +11,6 @@
   height: auto;
   margin: 14px 25px 10px 30%;
   background-color: #FFFFFF;
-  animation: header__logo 2000ms;
 }
 .header__background-form-search {
   background: #EAEAEA;
@@ -22,14 +21,6 @@
   align-items: center;
 }
 
-@keyframes header__logo {
-  0% {
-    transform: translateX(-9999px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 /***************************************************************************************************************************/
 /* Version tablette */
 @media screen and (min-width: 769px) {
@@ -42,7 +33,6 @@
     height: 54px;
     margin: 14px 25px 10px 0;
     background-color: #FFFFFF;
-    animation: header__logo 2000ms;
   }
   .header__background-form-search {
     background: #EAEAEA;
@@ -51,14 +41,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  @keyframes header__logo {
-    0% {
-      transform: translateX(-9999px);
-    }
-    100% {
-      transform: translateX(0);
-    }
   }
 }
 

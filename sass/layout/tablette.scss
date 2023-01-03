@@ -18,7 +18,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
    height: 150px;
    position: absolute;
    margin: 250px 0 0 130px; 
-   animation: loader 3s forwards;
+   animation: loader 5s forwards;
 }
 
 .loader:before, .loader:after
@@ -63,7 +63,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
 .container
 {
     width: 100%;
-    animation: container 1000ms;
+    animation: container 3000ms;
 }
 @keyframes container{
     0% {
@@ -78,16 +78,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
 {
     @include display-flex-center;
     flex-wrap: wrap;
-    animation: element1 2000ms;
 }
-@keyframes element1{
-    0% {
-            transform: translateX(-9999px);
-    }
-    100% {
-            transform: translateX(0);
-    }
-    }
 /* Le formulaire de recherche */
 .form
 {

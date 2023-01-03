@@ -17,7 +17,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
     height: 150px;
     margin: 250px 0 0 130px;
     position: absolute;
-    animation: loader 3s forwards;
+    animation: loader 5s forwards;
 }
 
 .loader:before, .loader:after
@@ -138,7 +138,6 @@ a
 {
     @include display-flex-center;
     flex-direction: column;
-    animation: main__section-annonce 3000ms;
     &__heading
     {
         @include typography-roboto700;
@@ -157,14 +156,6 @@ a
         width: 100%;
     }
 }
-@keyframes main__section-annonce{
-0% {
-    transform: translateX(-9999px);
-}
-100% {
-    transform: translateX(0);
-    }
-}
 /* Les Titres et les sous-titres */
 .main__section-function__heading
 {
@@ -174,15 +165,6 @@ a
     @include typography-roboto700;
     font-size: map-get($font-size, function-heading);
     line-height: 28.13px;
-    animation: main__section-function__heading 3500ms;
-}
-@keyframes main__section-function__heading{
-0% {
-    transform: translateX(-9999px);
-}
-100% {
-    transform: translateX(0);
-    }
 }
 .main__section-restaurant__heading
 {

@@ -17,7 +17,7 @@ Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericou
    height: 150px;
    position: absolute;
    margin: 250px 0 0 130px; 
-   animation: loader 3s forwards;
+   animation: loader 5s forwards;
 } 
 
 .loader:before, .loader:after
@@ -67,7 +67,7 @@ body
 .container
 {
     width: 100%;
-    animation: container 1000ms;
+    animation: container 3000ms;
 }
 @keyframes container{
     0% {
@@ -179,7 +179,6 @@ a
 {
     @include display-flex-center;
     flex-direction: column;
-    animation: main__section-annonce 3000ms;
     &__heading
     {
         @include typography-roboto700;
@@ -198,30 +197,13 @@ a
                 width: 97%;
             }
 }
-@keyframes main__section-annonce{
-    0% {
-        transform: translateX(-9999px);
-    }
-    100% {
-        transform: translateX(0);
-        }
-    }
 .main__section-function__heading
 {
     @include typography-roboto700;
     font-size: map-get($font-size, function-heading);
     line-height: 28.13px;
     margin: 0 0 0 -20px;
-    animation: main__section-function__heading 3500ms;
 }
-@keyframes main__section-function__heading{
-    0% {
-        transform: translateX(-9999px);
-    }
-    100% {
-        transform: translateX(0);
-        }
-    }
 .main__section-restaurant__heading
 {
     @include typography-roboto700;
@@ -254,16 +236,7 @@ button
 {
     @include display-flex-center;
     flex-wrap: wrap;
-    animation: element1 2000ms;
 }
-@keyframes element1{
-    0% {
-            transform: translateX(-9999px);
-    }
-    100% {
-            transform: translateX(0);
-    }
-    }
 .element2
 {
     @include display-flex-center;
@@ -272,14 +245,6 @@ button
     margin-top: 38px;
     animation: element2 3000ms;
 }
-@keyframes element2{
-    0% {
-        transform: translateX(-9999px);
-    }
-    100% {
-        transform: translateX(0);
-        }
-    }
 .element3
 {
     display: flex;
@@ -288,39 +253,6 @@ button
     margin: 30px;
 }
 /* Menu Fonctionnement */
-.background-choose-restaurant{
-    animation: background-choose-restaurant 4000ms;
-}
-.background-make-menu{
-    animation: background-make-menu 5000ms;
-}
-.background-taste-restaurant{
-    animation: background-taste-restaurant 6000ms;
-}
-@keyframes background-choose-restaurant{
-    0% {
-        transform: translateX(-9999px);
-    }
-    100% {
-        transform: translateX(0);
-        }
-    }
-@keyframes background-make-menu{
-        0% {
-            transform: translateX(-9999px);
-        }
-        100% {
-            transform: translateX(0);
-            }
-        }
-@keyframes background-taste-restaurant{
-            0% {
-                transform: translateX(-9999px);
-            }
-            100% {
-                transform: translateX(0);
-                }
-            }
 .background-choose-restaurant, .background-make-menu, .background-taste-restaurant
 {
     @include display-flex-spacecenter;
