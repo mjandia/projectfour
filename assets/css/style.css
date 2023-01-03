@@ -8,7 +8,7 @@
   height: 150px;
   position: absolute;
   margin: 250px 0 0 130px;
-  animation: loader 5s forwards;
+  animation: loader 3s forwards;
 }
 
 .loader:before, .loader:after {
@@ -91,15 +91,12 @@ img {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fadeIn 2s;
+  animation: loom 2s;
 }
 
-@keyframes fadeIn {
+@keyframes loom {
   0% {
     opacity: 0;
-  }
-  40% {
-    opacity: 0.4;
   }
   60% {
     opacity: 0.6;
@@ -338,16 +335,6 @@ button {
   left: 70%;
   display: flex;
   margin: -5px;
-}
-
-span {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: #008766;
-  text-align: center;
-  padding: 5px 0 0 5px;
 }
 
 .food {
