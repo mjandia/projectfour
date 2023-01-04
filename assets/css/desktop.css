@@ -4,28 +4,24 @@
   /* les couleurs du  header */
   /* Les couleurs du footer */
   /* Loader */
-  .loader-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .loader-page__loader {
+  .loader {
     width: 150px;
     height: 150px;
-    margin: 550px 0 0 0;
-    position: fixed;
+    position: absolute;
+    left: 600px !important;
+    top: 250px;
     border: 10px solid #9356DC;
     border-radius: 0px;
-    animation: loader 3s forwards;
+    animation: increase 3s forwards;
   }
-  @keyframes loader {
+  @keyframes increase {
     0% {
+      transform: scaleX(1);
       opacity: 1;
-      transform: scale(1);
     }
     100% {
+      transform: scaleX(1.7);
       opacity: 0;
-      transform: scale(1.7);
     }
   }
   /* Le corps de la page */

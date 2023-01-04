@@ -11,31 +11,27 @@ function-heading: 24px, restaurant-heading: 24px, button: 16px, functioning-menu
 Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericourt: 17px, La-francaise-Delice-sens: 18px);
 
 /* Loader */
-.loader-page
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-&__loader
+.loader
 {
     width: 150px;
     height: 150px;
-    margin: 550px 0 0 0;
-    position: fixed;
-    border: 10px solid #9356DC;
+    position: absolute;
+    left: 300px;
+    top: 250px;
+    border: 10px solid $violet;
     border-radius: 0px;
-    animation: loader 3s forwards;
+    animation: increase 3s forwards;
 }
+
+@keyframes increase{
+0% {
+    transform: scaleX(1);
+    opacity: 1;
 }
-@keyframes loader{
-    0%{
-        opacity: 1;
-        transform: scale(1);
-    }
-    100%{
-        opacity: 0;
-        transform: scale(1.7);
-    }
+100% {
+    transform: scaleX(1.7);
+    opacity: 0;
+}
 }
 /*La page contenant le site */
 .container
@@ -199,15 +195,15 @@ img
 }
 @keyframes loom
 {
-    0%{
-        opacity: 0;
-    }
-    60%{
-        opacity: 0.60;
-    }
-    100%{
-        opacity: 1;
-    }
+0%{
+    opacity: 0;
+}
+60%{
+    opacity: 0.60;
+}
+100%{
+    opacity: 1;
+}
 }
 /* Les titres et sous-titres */
 .main__section__heading
@@ -320,14 +316,14 @@ a
     animation: expand 1s forwards;
 }
 @keyframes expand{
-    0% {
-        width: 0px;
-        padding: 0px;
-    }
-    100% {
-        width: 50px;
-        padding: 10px;
-    }
+0% {
+    width: 0px;
+    padding: 0px;
+}
+100% {
+    width: 50px;
+    padding: 10px;
+}
 }
 /* Le bouton Commander */
 .button {
@@ -385,10 +381,10 @@ a
 @keyframes starter{
 0% {
     transform: translateX(-9999px);
-    }
+}
 100% {
     transform: translateX(0);
-    }
+}
 }
 .main-course
 {
@@ -397,10 +393,10 @@ a
 @keyframes main-course{
 0% {
     transform: translateX(-9999px);
-    }
+}
 100% {
     transform: translateX(0);
-    }
+}
 }
 .dessert
 {
@@ -409,9 +405,9 @@ a
 @keyframes dessert{
 0% {
     transform: translateX(-9999px);
-    }
+}
 100% {
     transform: translateX(0);
-    }
+ }
 }
 }
