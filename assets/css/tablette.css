@@ -4,54 +4,29 @@
 @media screen and (min-width: 575px) {
   /* les couleurs du  header */
   /* Les couleurs du footer */
-  /* le loader */
-  .loader {
+  /* Loader */
+  .loader-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader-page__loader {
     width: 150px;
     height: 150px;
-    position: absolute;
-    margin: 250px 0 0 130px;
+    margin: 550px 0 0 0;
+    position: fixed;
+    border: 10px solid #9356DC;
+    border-radius: 0px;
     animation: loader 3s forwards;
-  }
-  .loader:before, .loader:after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 200px;
-    width: 100%;
-    height: 100%;
-    border: 10px solid transparent;
-    border-color: #9356DC;
-    animation: spin 1s forwards;
-  }
-  .loader:before {
-    z-index: 100;
-    animation: increase 1s infinite;
-  }
-  .loader:after {
-    border: 10px solid #FF79DA;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes increase {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.4);
-    }
   }
   @keyframes loader {
     0% {
       opacity: 1;
+      transform: scale(1);
     }
     100% {
       opacity: 0;
+      transform: scale(1.7);
     }
   }
   /*La page contenant le site */

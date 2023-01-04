@@ -8,61 +8,32 @@
 $font-size: (placeholder: 16px,fieldinput: 16px, annonce-heading: 24px, annonce-discovery: 18px, 
 function-heading: 24px, restaurant-heading: 24px, button: 16px, functioning-menu: 16px, price-span: 14px, 
 Palette-gout-Note-enchante: 18px, Menilmontant-Charonne-cite-rouge-Folie-mericourt: 17px, La-francaise-Delice-sens: 18px);
-/* Loader */
-.loader
-{
-   width: 150px;
-   height: 150px;
-   position: absolute;
-   margin: 250px 0 0 130px; 
-   animation: loader 3s forwards;
-} 
 
-.loader:before, .loader:after
+/* Loader */
+.loader-page
 {
-   content: "";
-   position: absolute;
-   top: -10px;
-   left: 600px !important;
-   width: 100%;
-   height: 100%;
-   border: 10px solid transparent;
-   border-color: $violet;
-   animation: spin 1s forwards;
-}
-.loader:before
+    display: flex;
+    justify-content: center;
+    align-items: center;
+&__loader
 {
-   z-index: 100;
-   animation: increase 1s infinite;
+    width: 150px;
+    height: 150px;
+    margin: 550px 0 0 0;
+    position: fixed;
+    border: 10px solid #9356DC;
+    border-radius: 0px;
+    animation: loader 3s forwards;
 }
-.loader:after
-{
-   border: 10px solid $pink;
-}
-@keyframes spin
-{
-0%{
-    transform: rotate(0);
-    }
-100%{
-    transform: rotate(360deg)
-}
-}
-@keyframes increase
-{
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.4);
-    }
 }
 @keyframes loader{
     0%{
         opacity: 1;
+        transform: scale(1);
     }
     100%{
         opacity: 0;
+        transform: scale(1.7);
     }
 }
 /* Le corps de la page */
