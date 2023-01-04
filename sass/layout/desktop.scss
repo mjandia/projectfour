@@ -101,18 +101,17 @@ img
 }
 .coeur .fa-heart
 {
-    margin-right: 15px;
+    margin-right: 10px !important;
     cursor: pointer;
 }
 .coeur:hover .fa-heart, .coeur .fa-solid
 {
     display: none;
-    opacity: 0;
 }
 .coeur:hover .fa-solid
 {
     display: inline;
-    margin-right: 15px;
+    margin-right: 10px !important;
     background: linear-gradient(200.64deg, $violet -5.2%, $pink 110.74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -332,7 +331,7 @@ a
 .header__link
 {
     position: relative;
-    left: -300px;
+    left: -250px;
 }
 .coeur .fa-heart
 {
